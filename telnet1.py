@@ -23,7 +23,10 @@ tn.write("no shut\n")
 tn.write("exit\n")
 tn.write("int loop1\n")
 tn.write("ip addr 2.2.2.2 255.255.255.255\n")
-tn.write("no shut\n")
-tn.write("exit\n")
+tn.write("router ospf1 1\n")
+tn.write("network 0.0.0.0 255.255.255.255 area 0\n")
 tn.write("end\n")
+tn.write("exit\n")
+print tn.read_all()
+
 
