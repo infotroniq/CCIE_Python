@@ -1,4 +1,4 @@
-mport getpass
+import getpass
 import sys
 import telnetlib
 
@@ -25,8 +25,5 @@ tn.write("int loop1\n")
 tn.write("ip addr 2.2.2.2 255.255.255.255\n")
 tn.write("no shut\n")
 tn.write("exit\n")
-tn.write("exit\n")
-tn.write("copy run start\n")
 tn.write("end\n")
 
-print tn.read_all()
